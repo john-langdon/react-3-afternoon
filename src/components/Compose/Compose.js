@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProfileIcon from 'react-icons/lib/md/person-outline';
+import { IoIosContacts } from 'react-icons/io';
 
 import './Compose.css';
 
@@ -21,7 +21,8 @@ export default class Compose extends Component {
   }
 
   createPost() {
-
+    this.props.createPostFn(this.state.text)
+    this.setState({text: ''})
   }
 
   render() {
@@ -33,7 +34,7 @@ export default class Compose extends Component {
         <div className="Compose__top">
 
           <div className="Compose__profile-picture">
-            <ProfileIcon />
+            <IoIosContacts />
           </div>
 
           {/* This is where you type the message for your new post */}

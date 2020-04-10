@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import CompanyIcon from 'react-icons/lib/md/filter-hdr';
-import ProfileIcon from 'react-icons/lib/md/person-outline';
+import { IoIosContacts } from 'react-icons/io';
 
 import './Header.css';
 
@@ -16,7 +15,7 @@ export default class Header extends Component {
 
           {/* Displays the mountain icon in the header */}
           <div className="Header__company-info">
-            <CompanyIcon id="Header__company-icon" />
+            {/* <CompanyIcon id="Header__company-icon" /> */}
             <span>Social Mountain</span>
           </div>
 
@@ -26,7 +25,7 @@ export default class Header extends Component {
 
             {/* Displays the profile icon */}
             <div className="Header__profile">
-              <ProfileIcon />
+              <IoIosContacts />
             </div>
           </div>
 
